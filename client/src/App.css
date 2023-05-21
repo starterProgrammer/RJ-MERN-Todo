@@ -1,0 +1,162 @@
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background: rgb(31, 199, 199);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  color: rgb(151, 148, 148);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.todos {
+  width: 30%;
+  background-color: aquamarine;
+  border-radius: 6px;
+  padding: 1rem;
+  position: relative;
+
+}
+
+.todo {
+  border: 1px solid red;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  padding: 10px;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  background-color: gray;
+  border-radius: 99px;
+  margin-right: 10px;
+}
+
+.text {
+  text-transform: capitalize;
+}
+
+.delete {
+  position: absolute;
+  right: 16px;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo.is-complete .checkbox {
+  background-color: blueviolet;
+}
+
+.todo.is-complete .text {
+  text-decoration: line-through;
+}
+
+/* Empty  */
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.empty>h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: gray;
+}
+
+
+.add-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 1rem;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2px;
+}
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 320px;
+  background-color: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 32px rgb(68, 66, 66);
+}
+
+.close-popup {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  width: 1rem;
+  height: 1rem;
+  color: white;
+  background: red;
+  border-radius: 99px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.content>input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(216, 210, 210);
+  border-radius: 10px;
+}
+
+.content>button {
+  padding: 10px;
+  background-color: blueviolet;
+  color: white;
+  width: 30%;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
